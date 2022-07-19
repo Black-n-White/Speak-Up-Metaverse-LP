@@ -6,7 +6,8 @@ const languagePacks = {
         'input3': 'Your email address (Optional)',
         'submitBtn': 'Register',
         'dialogueSuccessText': 'Thank you for registering, a consultant will contact you soon.',
-        'dialogueFailText': 'Please fill out all the required fields (Name and Phone number)',
+        'dialogueFailText': 'Please fill out all the required fields (Name and Phone number).',
+        'dialogueTimeText': 'Oops, something went wrong. Please submit the form again in 1 minute.',
     },
     'ru': {
         'heading': 'Узнай больше про Speak Up Metaverse, зарегистрируйся на бесплатный пробный урок!',
@@ -15,7 +16,8 @@ const languagePacks = {
         'input3': 'Ваша електронная почта (По желанию)',
         'submitBtn': 'Заказать',
         'dialogueSuccessText': 'Благодарим за регистрацию на пробный урок, с вами скоро свяжется консультант.',
-        'dialogueFailText': 'Пожалуйста, заполните все необходимые поля для регистрации (Имя и номер телефона)',
+        'dialogueFailText': 'Пожалуйста, заполните все необходимые поля для регистрации (Имя и номер телефона).',
+        'dialogueTimeText': 'Упс, что-то пошло не так. Пожалуйста, отправьте форму еще раз через 1 минуту',
     },
     'ua': {
         'heading': 'Дізнайся більше про Speak Up Metaverse, зареєструйся на безкоштовний пробний урок!',
@@ -23,8 +25,9 @@ const languagePacks = {
         'input2': "Ваш номер телефону (Обов'язково)",
         'input3': "Ваша електронна пошта (За бажанням)",
         'submitBtn': 'Зареєструватися',
-        'dialogueSuccessText': "Дякуємо за реестрацію на пробний урок, з вами скоро зв'яжеться консультант",
-        'dialogueFailText': "Будь ласка, заповніть всі поля, необхідні для реєстрації (Ім'я та номер телефону)",
+        'dialogueSuccessText': "Дякуємо за реестрацію на пробний урок, з вами скоро зв'яжеться консультант.",
+        'dialogueFailText': "Будь ласка, заповніть всі поля, необхідні для реєстрації (Ім'я та номер телефону).",
+        'dialogueTimeText': "Упс, щось пішло не так. Будь ласка, заповніть форму знову через 1 хвилину.",
     },
 };
 
@@ -36,8 +39,10 @@ input3 = document.getElementById( 'input3' );
 submitBtn = document.getElementById( 'submit-btn' );
 dialogueSuccess = document.getElementById( "dialogue-success" );
 dialogueFail = document.getElementById( "dialogue-fail" );
+dialogueTime = document.getElementById( "dialogue-time" );
 dialogueSuccessText = document.getElementById( "dialogue-success-text" );
 dialogueFailText = document.getElementById( "dialogue-fail-text" );
+dialogueTimeText = document.getElementById( "dialogue-time-text" );
 
 langSelects.forEach( langSelect =>
 {
@@ -56,5 +61,6 @@ langSelects.forEach( langSelect =>
         submitBtn.innerText = langPack[ 'submitBtn' ];
         dialogueSuccessText.innerText = langPack[ 'dialogueSuccessText' ];
         dialogueFailText.innerText = langPack[ 'dialogueFailText' ];
+        dialogueTimeText.innerText = langPack[ 'dialogueTimeText' ];
     } )
 } );
