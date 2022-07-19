@@ -64,25 +64,25 @@
                     body: data,
                 } )
 
-                    // this doesn't work properly yet
-
-                    .catch( e )
-                {
-                    console.log( 'oops' );
-                    dialogueTime.style.display = 'block';
-                    setTimeout( () =>
-                    {
-                        dialogueTime.classList.add( 'dialogue-active' );
-                    }, 1 );
-                    setTimeout( () =>
-                    {
-                        dialogueTime.classList.remove( 'dialogue-active' );
-                        setTimeout( () =>
-                        {
-                            dialogueTime.style.display = 'none';
-                        }, 1000 );
-                    }, 5000 );
-                }
+                // this doesn't work properly yet
+                //
+                //     .catch( e )
+                // {
+                //     console.log( 'oops' );
+                //     dialogueTime.style.display = 'block';
+                //     setTimeout( () =>
+                //     {
+                //         dialogueTime.classList.add( 'dialogue-active' );
+                //     }, 1 );
+                //     setTimeout( () =>
+                //     {
+                //         dialogueTime.classList.remove( 'dialogue-active' );
+                //         setTimeout( () =>
+                //         {
+                //             dialogueTime.style.display = 'none';
+                //         }, 1000 );
+                //     }, 5000 );
+                // }
                 input1.value = '';
                 input2.value = '';
                 input3.value = '';
