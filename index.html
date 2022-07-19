@@ -6,11 +6,35 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./index.css">
     <title>Speak Up</title>
 </head>
 
 <body>
-
+    <div class="wrapper">
+        <div class="lang-select">
+            <div class="lang lang-active" id="ua">
+                <p class="lang-text">UA</p>
+            </div>
+            <div class="lang" id="ru">
+                <p class="lang-text">RU</p>
+            </div>
+            <div class="lang" id="en">
+                <p class="lang-text">EN</p>
+            </div>
+        </div>
+        <div class="speak-up-logo-container">
+            <img src="./SpeakUpLogo.png" alt="Speak Up Logo" class="speak-up-logo">
+        </div>
+        <h1 class="heading" id="heading">Дізнайся більше про Speak Up Metaverse, замов безкоштовний пробний урок!</h1>
+        <div class="form">
+            <input class="input" type="text" id="input1" placeholder="Ваше ім'я та прізвище (Обов'язково)">
+            <input class="input" type="text" id="input2" placeholder="Ваш номер телефону (Обов'язково)">
+            <input class="input" type="text" id="input3" placeholder="Ваша електронна пошта (За бажанням)">
+            <button class="btn submit-btn" id="submit-btn">Замовити</button>
+        </div>
+    </div>
+    <script src="./index.js"></script>
 </body>
 
 </html>

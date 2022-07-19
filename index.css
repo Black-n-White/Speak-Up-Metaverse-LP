@@ -1,0 +1,182 @@
+.wrapper
+{
+    position: fixed;
+    background-color: rgb(40, 40, 40);
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    font-family: sans-serif;
+}
+
+.input
+{
+    border-radius: 30px;
+    width: 40%;
+    margin-inline: 30%;
+    height: 40px;
+    border: none;
+    outline: none;
+    text-align: center;
+    transition: 300ms;
+}
+
+.form
+{
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-row-gap: 20px;
+}
+
+.btn
+{
+    background-color: rgb(196, 0, 0);
+    border: none;
+    color: whitesmoke;
+    cursor: pointer;
+    border-radius: 30px;
+    margin-inline: 35%;
+    height: 40px;
+    width: 30%;
+    transition: 300ms;
+}
+
+.heading
+{
+    font-size: xx-large;
+    color: whitesmoke;
+    margin-inline: 10%;
+    text-align: center;
+}
+
+.speak-up-logo
+{
+    width: 100px;
+    height: 100px;
+}
+
+.speak-up-logo-container
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin-top: 10px;
+}
+
+.lang-select
+{
+    position: absolute;
+    display: grid;
+    height: 40px;
+    width: 40px;
+    grid-template-columns: 40px 40px 40px;
+    left: 10px;
+    bottom: 10px;
+}
+
+.lang
+{
+    width: 40px;
+    height: 40px;
+    background-color: rgb(30, 30, 30);
+    color: rgb(210, 210, 210);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: 100ms;
+}
+
+.lang-active
+{
+    background-color: rgb(100, 100, 100);
+}
+
+.btn:hover
+{
+    background-color: rgb(128, 0, 0);
+}
+
+@media (max-width: 767px)
+{
+    .input
+    {
+        width: 50%;
+        margin-inline: 25%;
+        height: 30px;
+    }
+
+    .btn
+    {
+        width: 40%;
+        margin-inline: 30%;
+        height: 30px;
+    }
+
+    .heading
+    {
+        font-size: x-large;
+    }
+}
+
+@media (max-width: 512px)
+{
+    .input
+    {
+        width: 60%;
+        margin-inline: 20%;
+    }
+
+    .btn
+    {
+        width: 50%;
+        margin-inline: 25%;
+    }
+}
+
+@media (max-width: 410px)
+{
+    .input
+    {
+        width: 70%;
+        margin-inline: 15%;
+    }
+
+    .btn
+    {
+        width: 60%;
+        margin-inline: 20%;
+    }
+}
+
+@media (max-width: 350px)
+{
+    .input
+    {
+        width: 80%;
+        margin-inline: 10%;
+    }
+
+    .btn
+    {
+        width: 70%;
+        margin-inline: 15%;
+    }
+}
+
+@media (max-width: 350px)
+{
+    .input
+    {
+        width: 90%;
+        margin-inline: 5%;
+    }
+
+    .btn
+    {
+        width: 80%;
+        margin-inline: 10%;
+    }
+}
