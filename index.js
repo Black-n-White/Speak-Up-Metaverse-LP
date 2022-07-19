@@ -5,20 +5,26 @@ const languagePacks = {
         'input2': 'Your phone number (Required)',
         'input3': 'Your email address (Optional)',
         'submitBtn': 'Register',
+        'dialogueSuccessText': 'Thank you for registering, a consultant will contact you soon.',
+        'dialogueFailText': 'Please fill out all the required fields (Name and Phone number)',
     },
     'ru': {
-        'heading': 'Узнай больше про Speak Up Metaverse, закажи бесплатный пробный урок!',
+        'heading': 'Узнай больше про Speak Up Metaverse, зарегистрируйся на бесплатный пробный урок!',
         'input1': 'Ваше имя и фамилия (Обязательно)',
         'input2': 'Ваш номер телефона (Обязательно)',
         'input3': 'Ваша електронная почта (По желанию)',
         'submitBtn': 'Заказать',
+        'dialogueSuccessText': 'Благодарим за регистрацию на пробный урок, с вами скоро свяжется консультант.',
+        'dialogueFailText': 'Пожалуйста, заполните все необходимые поля для регистрации (Имя и номер телефона)',
     },
     'ua': {
-        'heading': 'Дізнайся більше про Speak Up Metaverse, замов безкоштовний пробний урок!',
+        'heading': 'Дізнайся більше про Speak Up Metaverse, зареєструйся на безкоштовний пробний урок!',
         'input1': "Ваше ім'я та прізвище (Обов'язково)",
         'input2': "Ваш номер телефону (Обов'язково)",
         'input3': "Ваша електронна пошта (За бажанням)",
-        'submitBtn': 'Замовити',
+        'submitBtn': 'Зареєструватися',
+        'dialogueSuccessText': "Дякуємо за реестрацію на пробний урок, з вами скоро зв'яжеться консультант",
+        'dialogueFailText': "Будь ласка, заповніть всі поля, необхідні для реєстрації (Ім'я та номер телефону)",
     },
 };
 
@@ -28,6 +34,10 @@ input1 = document.getElementById( 'input1' );
 input2 = document.getElementById( 'input2' );
 input3 = document.getElementById( 'input3' );
 submitBtn = document.getElementById( 'submit-btn' );
+dialogueSuccess = document.getElementById( "dialogue-success" );
+dialogueFail = document.getElementById( "dialogue-fail" );
+dialogueSuccessText = document.getElementById( "dialogue-success-text" );
+dialogueFailText = document.getElementById( "dialogue-fail-text" );
 
 langSelects.forEach( langSelect =>
 {
@@ -44,5 +54,7 @@ langSelects.forEach( langSelect =>
         input2.placeholder = langPack[ 'input2' ];
         input3.placeholder = langPack[ 'input3' ];
         submitBtn.innerText = langPack[ 'submitBtn' ];
+        dialogueSuccessText.innerText = langPack[ 'dialogueSuccessText' ];
+        dialogueFailText.innerText = langPack[ 'dialogueFailText' ];
     } )
 } );
